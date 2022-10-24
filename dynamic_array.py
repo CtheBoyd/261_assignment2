@@ -132,27 +132,27 @@ class DynamicArray:
     # -----------------------------------------------------------------------
 
     def resize(self, new_capacity: int) -> None:
-        da = DynamicArray()
 
-        new_array = 0
-        for i in range(da):
-            new_array[i] = self.array[i]
 
-        self.array = new_array
-        self.capacity = new_capacity
+        self._size(new_capacity)
+        self._data = da.resize()
 
+        # da = DynamicArray()
+        # da.print_da_variables() # add to new capacity
+        # da.resize(8)   # changes array to 8 nodes
+        # da.print_da_variables() # add to new capacity
+        # da.resize(2)   # changes array to 2 nodes
+        # da.print_da_variables() # add to new capacity
+        # da.resize(0)    # changes array to 0 nodes
+        # da.print_da_variables() # add to new capacity
 
 
     def append(self, value: object) -> None:
 
         "#adds new value to the end of the array."
         "# Change memory size?"
-        if self.size == self.capacity:
-            self._resize(2 * self.capacity)
 
-        self.array[self.size] = value
-        self.size += 1
-
+        pass
 
     def insert_at_index(self, index: int, value: object) -> None:
         "# Adds new value at a specific index"
