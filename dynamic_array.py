@@ -132,13 +132,13 @@ class DynamicArray:
     # -----------------------------------------------------------------------
 
     def resize(self, new_capacity: int) -> None:
-
+        da = DynamicArray()
 
         # self._size(new_capacity)
         # self._data = da.resize()
         #current_cap = 4
         #da.resize()
-        for i in self._size():
+        for i in self._size(da):
             if da.resize() == self._data:
                 pass
             else:
