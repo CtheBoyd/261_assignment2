@@ -132,70 +132,77 @@ class DynamicArray:
     # -----------------------------------------------------------------------
 
     def resize(self, new_capacity: int) -> None:
-       da = DynamicArray()
-       new_capacity (da)
-       da.print_da_variables() # add to new capacity
-       da.resize((da - da) + 8)   # changes array to 8 nodes
-       da.print_da_variables() # add to new capacity
-       da.resize((da - da) + 2)   # changes array to 2 nodes
-       da.print_da_variables() # add to new capacity
-       da.resize((da - da) + 0)    # changes array to 0 nodes
-       da.print_da_variables() # add to new capacity
+        da = DynamicArray()
+
+        new_array = 0
+        for i in range(da):
+            new_array[i] = self.array[i]
+
+        self.array = new_array
+        self.capacity = new_capacity
+
 
 
     def append(self, value: object) -> None:
-        """
-        TODO: Write this implementation
-        """
-        pass
+
+        "#adds new value to the end of the array."
+        "# Change memory size?"
+        if self.size == self.capacity:
+            self._resize(2 * self.capacity)
+
+        self.array[self.size] = value
+        self.size += 1
+
 
     def insert_at_index(self, index: int, value: object) -> None:
-        """
-        TODO: Write this implementation
-        """
+        "# Adds new value at a specific index"
+        "# If index invalid, raise 'DynamicArrayException'"
+        "# Change memory size?"
+
         pass
 
     def remove_at_index(self, index: int) -> None:
-        """
-        TODO: Write this implementation
-        """
+        "# Removes element from a specific index."
+        "# If index invalid, raise 'DynamicArrayException'"
+        "# Change capacity size based on number of elements in the list? Do so before the removal of the element?"
+
         pass
 
     def slice(self, start_index: int, size: int) -> "DynamicArray":
-        """
-        TODO: Write this implementation
-        """
+        "# Returns a new da object that holds requested number of elements from the original array."
+        "# This starts with the element in the requested start index."
+        "# If index, size, or not enough elements to remove, raise 'DAException."
         pass
 
     def merge(self, second_da: "DynamicArray") -> None:
-        """
-        TODO: Write this implementation
-        """
+        "# This takes one DA object as a parameter and appends this arrays elements to another array."
         pass
 
     def map(self, map_func) -> "DynamicArray":
-        """
-        TODO: Write this implementation
-        """
+        "# This method creates a new dynamic array where the value of each element is derived by applying a given map_func to the corresponding value from the original array."
+
         pass
 
     def filter(self, filter_func) -> "DynamicArray":
-        """
-        TODO: Write this implementation
-        """
+        "# This method creates a new dynamic array populated only with those elements from the original array for which filter_func returns True."
+
+
         pass
 
     def reduce(self, reduce_func, initializer=None) -> object:
-        """
-        TODO: Write this implementation
-        """
+        "# Applies reduce-func to all elements of the DA and returns the result."
+        "# If value not provide, first value in array is the initializer"
+        "# If array empty, returns the value of initializer, or none if nothing provided"
+
         pass
 
 
 def find_mode(arr: DynamicArray) -> (DynamicArray, int):
-    """
-    TODO: Write this implementation
-    """
+    "# Standalone function not in DA class receives a DA in sorted orders either ascending or descending"
+    "# Returns tuple containing DA y comprising the mode (most-occurring) value/s of the array, and an integer that represents the highest frequency (how many times they appear). "
+    "# If more than one mode , return all frequent values in order they appear in the input array. Only one mode, return that one."
+    "# "
+
     pass
 
 
