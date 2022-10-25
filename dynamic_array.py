@@ -135,14 +135,14 @@ class DynamicArray:
 
         arr_cap = self._capacity
 
-        while arr_cap in range(arr_cap):
+        while arr_cap in da:
 
             if da.resize() < 0 or da.resize() < self._size:
-                break
+                raise StopIteration
             if da.resize() == arr_cap:
-                break
+                raise StopIteration
             else:
-                new_capacity = arr.append(da.resize())
+                new_capacity = arr.tail.append(da.resize())
 
         return new_capacity
 
