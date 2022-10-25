@@ -1,9 +1,9 @@
-# Name:
-# OSU Email:
+# Name: Christopher Boyd
+# OSU Email: boydc3@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment:
-# Due Date:
-# Description:
+# Assignment: assignment #2
+# Due Date: 10/24/2022
+# Description: didn't get to it, spent entire time trying to understand dynamic_array
 
 
 from dynamic_array import *

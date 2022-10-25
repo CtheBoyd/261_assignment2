@@ -1,9 +1,9 @@
-# Name:
-# OSU Email:
+# Name: Christopher Boyd
+# OSU Email: boydc3@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment:
-# Due Date:
-# Description:
+# Assignment: assignment 2
+# Due Date: 10/24/2022
+# Description: List and list index manipulation. I'm still having terrible problems with setting up for coding, pseudocode/block diagrams. It's not just python, I'm not doing so great with Javascript as well. Are there any good online, one on one, tutoring sources for this stuff? I'm fully online so on campus stuff will not work.
 
 
 from static_array import StaticArray
@@ -143,7 +143,7 @@ class DynamicArray:
             if da.resize() == arr_cap:
                 break
             else:
-                new_capacity = arr_cap.resize()
+                new_capacity = da.resize()
 
 
         return new_capacity
