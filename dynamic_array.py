@@ -142,7 +142,7 @@ class DynamicArray:
             if da.resize() == arr_cap:
                 break
             else:
-                new_capacity.append(da.resize())
+                new_capacity = arr.append(da.resize())
 
         return new_capacity
 
