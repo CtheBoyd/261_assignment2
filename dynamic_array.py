@@ -142,9 +142,12 @@ class DynamicArray:
             if da.resize() == arr_cap:
                 raise StopIteration
             else:
-                new_capacity = arr.tail.append(da.resize())
+                new_capacity = da.resize()
 
         return new_capacity
+
+
+
 
 
 
