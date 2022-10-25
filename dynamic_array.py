@@ -136,10 +136,10 @@ class DynamicArray:
 
         arr_cap = self._capacity
 
-        for i in range(arr_cap):
-            if arr_cap < 0 or arr_cap < self._size:
+        while arr_cap in range(arr_cap):
+            if da.resize() < 0 or da.resize() < self._size:
                 break
-            if arr_cap == self._data:
+            if da.resize() == arr_cap:
                 break
             else:
                 new_capacity = da.resize(arr_cap)
@@ -162,14 +162,7 @@ class DynamicArray:
         "#adds new value to the end of the array."
         "# Change memory size?"
 
-        da = DynamicArray()
 
-
-
-        for i in range(9):
-            if self._capacity < self._size:
-                da.append(i + 101)
-        print(da)
 
         pass
 
