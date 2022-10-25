@@ -134,16 +134,17 @@ class DynamicArray:
     def resize(self, new_capacity: int) -> None:
 
         arr_cap = self._capacity
+        new_capacity = []
 
 
         while arr_cap in range(arr_cap):
 
-            if da.resize(arr_cap) < 0 or da.resize(arr_cap) < self._size:
+            if da.resize(value) < 0 or da.resize(value) < self._size:
                 break
             if da.resize() == arr_cap:
                 break
             else:
-                new_capacity = da.resize()
+                new_capacity.append(da.resize(value))
 
 
         return new_capacity
